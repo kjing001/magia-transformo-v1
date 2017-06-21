@@ -6,17 +6,6 @@ using EasyWiFi.ServerBackchannels;
 
 public class TranseoSaltatus : MonoBehaviour {
 
-
-    /*
-    public Toggle isRedBook;
-    public Toggle isYellowBook;
-    public Toggle isGreenBook;
-    public Toggle isSerialRFID;
-    public Toggle isSerialLED;
-    public Toggle isWifi;
-    public Toggle isVision;
-    public Button restartButton;*/
-
     // list of the costumes for each witch 
     //		stored in form [Hat1, Cloak1, Hat2, Cloak2, Hat3, Cloak3]
     string[] costumes = new string[6];
@@ -100,18 +89,6 @@ public class TranseoSaltatus : MonoBehaviour {
     static Dictionary<int, string> num2String = new Dictionary<int, string>() {
         {1, "One"}, {2, "Two"}, {3, "Three"}, {4, "Four"}
     };
-    /* // old fashioned 
-    static Dictionary<string, float> floatLookup = new Dictionary<string, float>() {
-        {"Red", 1.0f}, {"Yellow", 2.0f}, {"Green", 3.0f},
-        {"Left", 4.0f}, {"Stop", 5.0f}, {"Right", 6.0f},
-
-        {"Null Hat", 10.0f}, {"Fire Hat", 11.0f}, {"Water Hat", 12.0f}, {"Earth Hat", 13.0f}, {"Air Hat", 14.0f}, {"Dark Hat", 15.0f}, {"N-ergy Hat", 16.0f},
-        {"Null Cloak", 20.0f},{"Fire Cloak", 21.0f}, {"Water Cloak", 22.0f}, {"Earth Cloak", 23.0f}, {"Air Cloak", 24.0f}, {"Dark Cloak", 25.0f}, {"N-ergy Cloak", 26.0f},
-
-        {"Null Witch", 30.0f}, {"Fire", 31.0f}, {"Water", 32.0f}, {"Earth", 33.0f}, {"Air", 34.0f}, {"Dark", 35.0f}, {"Energy", 36.0f},
-        {"Steam", 37.0f}, {"Lava", 38.0f}, {"Fire Air", 39.0f}, {"Dark Fire", 40.0f}, {"Fire Energy", 41.0f}, {"Mud", 42.0f}, {"Rain", 43.0f},
-        {"Dark Water", 44.0f}, {"Water Energy", 45.0f}, {"Dust", 46.0f}, {"Dark Earth", 47.0f}, {"Gem", 48.0f}, {"Tornado", 49.0f}, {"Wind", 50.0f}, {"Dark Energy", 51.0f},
-    };*/
 
 
     void Awake() {
@@ -1054,9 +1031,5 @@ public class TranseoSaltatus : MonoBehaviour {
             wifiGameState("reset animation");
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            wifiGameState("bb");
-        }
     }
 }

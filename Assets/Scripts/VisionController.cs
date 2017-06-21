@@ -8,8 +8,6 @@ using System.Linq;
 using Windows.Kinect;
 
 using OpenCVForUnity;
-using OpenCVForUnityExample; // access to classes defined in script files in OpenCVForUnityExample, such as ColorObject
-
 
 public class VisionController: MonoBehaviour
 {
